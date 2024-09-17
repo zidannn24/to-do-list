@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap"
+        rel="stylesheet">
+
+</head>
+<body>
+    <section class="edit-profile">
+        <h1 class="text-edit-profile">Profile</h1>
+        <div class="card-edit-profile">
+            <h1 id="profile-username"></h1>
+            <form class="form-edit-profile" id="form-edit-profile">
+                <input type="text" id="change-profile-username" placeholder="Change Username" required>
+                <input type="password" id="change-profile-password" placeholder="Change Password">
+                <ul>
+                    <li id="username-required" class="required">Username max 8 chars.</li>
+                    <li id="password-required" class="required">Password min 6 chars and contain letters.</li>
+                </ul>
+                <button id="btn-save-change" type="submit">Save</button>
+            </form>
+            <button id="btn-cancel-change" class="btn-cancel-change">Back</button>
+            <button id="btn-logout" class="btn-logout">LogOut</button>
+        </div>
+    </section>
+    <script src="./profile.js"></script>
+</body>
+</html>
